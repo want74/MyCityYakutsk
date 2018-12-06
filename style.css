@@ -1,0 +1,117 @@
+.navbar{
+	height: 60px;
+	background: #4d9aff;
+
+}
+body{
+	margin: 0
+}
+.logo{
+	height: 60px;
+	width: 200px;
+	margin-left: 100px
+}
+.btns{
+	width: 600px;
+	height: 50px;
+	background: purple;
+	margin-left: 200px;
+	margin-top: 5px;
+}
+.flex{
+	display: flex;
+}
+.search{
+	margin-top: 20px;
+	height: 20px;
+	margin-left: 100px
+}
+.main{
+	margin: auto;
+	height: auto;
+	width: 1000px;
+}
+.mainImg{
+	background: red;
+	margin-top: 10px;
+	height: 500px;
+
+	
+
+}
+.txt{
+	margin-top: 100px;
+	text-align: center;
+	margin: auto;
+
+}
+.slider{
+	height: 200px;
+	width: 400px;
+	background: green;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.card{
+	margin-left: 63px;
+
+}
+.kek{
+	height: 200px;
+	width: 250px;
+	background: yellow
+}
+.txtInDivK{
+	width: 250px;
+	height: 100px;
+	background: blue;
+	text-align: center;
+}
+.lolkek{
+	background: #4d9aff;
+	height: 40px;
+	width: 100px;
+	border: none;
+
+}
+.proekts{
+	margin-top: 50px;
+}
+.h1{
+	text-align: center;
+}
+.img{
+	height: 100px;
+	width: 100px;
+	background: red
+}
+.first{
+	background: yellow;
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	margin-top: 50px;
+	margin-left: 50px
+}
+.txtInDiv{
+	width: 200px
+}
+.inBox{
+	background: red;
+	width: 200px;
+	height: 100px;
+	margin-top: 20px;
+	margin-left: 20px
+}
+.sponsors{
+	margin-left: 280px
+}
+a{
+		text-decoration: none;
+	color: white
+}
+.footer{
+	height: 200px;
+	background: cyan
+}
