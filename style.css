@@ -27,12 +27,13 @@ body{
 	margin-left: 100px
 }
 .main{
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	height: auto;
 	width: 1000px;
 }
 .mainImg{
-	background: red;
+
 	margin-top: 10px;
 	height: 500px;
 

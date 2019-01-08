@@ -58,6 +58,10 @@
 			background: grey
 		}
 
+		.btn2 {
+			display: none
+		}
+
 	</style>
 </head>
 <body>
@@ -69,7 +73,7 @@
 		</div>
 	</div>
 
-	<div class="main bg-light" style="margin-top: 100px; margin-bottom: 100px">
+	<div class="main bg-light" style="margin-top: 100px;">
 	<div class="mainImg flex">
 		<div class="txt">
 			<img src="YKT.png" height="500px" width="100%">
@@ -130,27 +134,55 @@
 	</div>
 	</div>
 
-	<div class="proekts ">
-		<div class="row">
-			<div class="col" style="text-align: center;">
+	<div class="row">
+		<!--<div class="row">
+			<div class="col align-self-center" >
+				<div class="row">
 				<h1 class="vp" id="1"></h1>
-				<button class="btn">
+				</div>
+				<div class="row">
+				<button class="btn3 btn" style="margin-left: 1rem">
 					Создать вопрос
 				</button>
+				<button class="btn2 btn">
+					Узнать ответ
+				</button>
+				</div>
+				<h3 class="otvet" id = "2"></h3>
+				
 			</div>	
+		</div>
+	-->
+		<div class="col-8" style="margin-left: auto;margin-right: auto;">
+			<div class="row" style="text-align: center;">
+				<h1 class="vp" id="1"></h1>
+			</div>
+			<div class="row">
+				<button class="btn3 btn" style="margin-left: auto;margin-right: auto;margin-top: 1rem">
+					Создать вопрос
+				</button>
+			</div>
+			<div class="row" style="margin-left: auto;margin-right: auto;">
+				<h1 class="otvet" style="margin-left: auto;margin-right: auto;"></h1>
+			</div>
+			<div class="row">
+				<button class="btn2 btn" style="margin-left: auto;margin-right: auto;margin-top: 1rem">
+					Узнать ответ
+				</button>
+			</div>
 		</div>
 
 		
 	</div>
 
 
-	<div class="newsInfo" style="margin-top: 100px">
+	<div class="newsInfo" style="margin-bottom: 3rem">
 		<div class="h1">
 		<h1>
 			Карты транспорта игроков
 		</h1>
 		</div>
-		<div class="news">
+		<div class="news" >
 			<div class="row">
 			<div class="col g">
 				<div class="row">
@@ -221,10 +253,11 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 
 
-	<footer class="page-footer grey " style="margin-top: 100px">
+	<footer class="page-footer grey ">
     <div class="container">
       <div class="row">
         <div class="col">
@@ -246,8 +279,6 @@
       </div>
     </div>
   </footer>
-		
-	</div>
 	</div>
 	<script>
 		var image=document.createElement('img');
@@ -341,13 +372,26 @@
 	}
 
 	var vp = document.getElementById('1');
-	var btn = document.querySelector('.btn');
-	var dq = ['Когда родился Алексей Кулаковский?','Род деятельности Алексея Кулаковского?','В каком улусе родился Алексей Кулаковский?','К каких жанрах писал Алексей Кулаковский?','Назовите первые произведения Кулаковского написаные на русском языке?','Вместе с ученым-лингвистом Семеном Новгородовым что он составил?','В каком году был установлен бюст Кулаковского над могилой поэта?']
+	var otvet = document.querySelector('.otvet');
+	var btn2 = document.querySelector('.btn2')
+	var btn = document.querySelector('.btn3');
+	var t = true
+	var dq = ['Когда родился Алексей Кулаковский?','Род деятельности Алексея Кулаковского?','В каком улусе родился Алексей Кулаковский?','В каких жанрах писал Алексей Кулаковский?','Назовите первые произведения Кулаковского написаные на русском языке?','Вместе с ученым-лингвистом Семеном Новгородовым что он составил?','В каком году был установлен бюст Кулаковского над могилой поэта?','Когда был основан город Якутск?','Кто основал город Якутск?','Когда была образована Якутская Автономная Советская Социалистическая Республика (ЯАССР)?','Какого числа день города в Якутске?','Когда вступила в силу новая конституция республики, которая определила статус Якутии как субъекта Российской Федерации?','Где расположен город Якутск?','Период гражданской войны в Якутии?','Что заложил отряд енисейского сотника Петра Бекетова, обследуя берега реки Лены, на правом берегу реки в 70 км ниже по течению от места расположения современного Якутска на земле борогонских якутов?','Доисторический гигант, обитавший в древности на территории российского Заполярья','В каком году Якутск получил статус города','Кто был первым губернатором якутской области','Какая улица города до 1917 года носила название Монастырская','Какая улица Якутска самая длинная','В 1707 году в Якутске построили первое каменное здание. Что там размещалось?','В каком году в Якутске начал ездить первый автобус?','Во время правления какого губернатора Якутская область и Якутск получили наибольшее развитие? При нем в городе были построены электростанция, телефонная станция, открылся музей.','Чем известен купец Алексим Кушнарев? Что он сделал для Якутска?','Сколько букв в якутском алфавите?','В каком году вышла первая якутская книга?']
+
+	var da = ['4 (7) марта 1877','Писатель','Таттинский улус','	поэма, стихотворение','«Вправе ли русские гордиться своим именем?» и «Главнейшие достоинства поэзии Пушкина»','якутский алфавит','1992','25 сентября 1632 г.',' Петр Бекетов','27 апреля 1922 г.','2-е воскресение сентября','27 апреля 1992 г.','В долине Туймаада на левом берегу реки Лены, в среднем ее течении','1918-1921 гг. ','Якутский (Ленский) острог','Мамонт','1678','Константин Григорьев','Улица Дзержинского','Улица Лермонтова','Воеводская канцелярия','1936','Крафт Иван Иванович',' Открыл ночлежный дом для бедняков','40','в 1812 году в Иркутске отпечатали сборник «Молитвы. Символ веры и заповеди Божьи: начатки вероучения» на якутском языке']
 	btn.onclick = function() {	
+		otvet.style.display = 'none'
 		var rand = Math.floor(Math.random() * dq.length);
+		btn2.style.display = 'block'
+		btn2.onclick = function() { 
+			otvet.style.display = 'block'
+			otvet.innerHTML = da[rand]
+			
+		}
 		vp.innerHTML = dq[rand]
 		console.log(vp)
 	}
+	
 	</script>
 </body>
 </html>
